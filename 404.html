@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+body{
+   margin:0;
+  font-family:"Ubuntu", monospace;
+}
+div{
+  display:flex;
+}
+a{
+  text-decoration:underline;
+  color:rgb(0,148,148);
+}
+#page{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+</style>
+</head>
+<div id="page">
+  <div>Error 404</div>
+  <div>Ya Messed Up B</div>
+  <button onclick="returnPage()">
+    <span>Return to Previous Page</span>
+    </button
+</div>
+  <script>
+function returnPage() {
+    window.history.back();
+}
+</script>
