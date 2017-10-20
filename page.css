@@ -14,6 +14,23 @@ body {
   background-color:#7e4552;
 }
 
+.scroller::-webkit-scrollbar{
+  width:6px;
+}
+.scroller::-webkit-scrollbar-thumb{
+  background-color:rgba(0,0,0,.5);
+}
+/*.scroller::-webkit-scrollbar-track{
+  background-color:rgba(0,128,128,0);
+}
+.scroller::-webkit-scrollbar-track-piece{
+  background-color:rgba(255,255,255,0);
+}
+.scroller::-webkit-scrollbar-button{
+  background-color:rgba(0,255,0,1);
+  max-height:4px;
+}*/
+
 .appearance{
   position:absolute;
   opacity:1.7;
@@ -23,6 +40,7 @@ body {
   bottom:0;
   right:0;
   box-shadow: 3px 3px 5px 0 rgba(35,35,35,.8);
+  z-index:1;
 }
 .appearance:hover{
   opacity:1;
@@ -95,21 +113,6 @@ input:focus + .aptoggle {
 
 input:checked + .aptoggle:before {
   transform: translateX(26px);
-}
-.scroller::-webkit-scrollbar{
-  width:20px;
-}
-.scroller::-webkit-scrollbar-track{
-  background-color:rgb(0,0,255);
-}
-.scroller::-webkit-scrollbar-track-piece{
-  background-color:rgba(255,255,255,.5);
-}
-.scroller::-webkit-scrollbar-thumb{
-  background-color:rgb(255,0,0);
-}
-.scroller::-webkit-scrollbar-button{
-  background-color:rgb(0,255,0);
 }
 #page {
   top: 0;
@@ -187,6 +190,7 @@ input:checked + .aptoggle:before {
   opacity: 1;
   background-color: black;
   box-shadow: 3px 5px 5px 0 black;
+  z-index:1;
 }
 .menu .scroller{
   overflow:auto;
@@ -209,6 +213,7 @@ nsection a {
   font-size: 14px;
   margin-left:10px;
   display:inline-flex;
+  margin:0 auto 0 10px;
 }
 nsection a:hover {
   background-color: rgb(35, 35, 35);
@@ -252,11 +257,14 @@ nsection a:hover:after {
   float: right;
   width: calc(100% - 190px);
   display: flex;
+  max-height:100%;
 }
 .main .scroller {
   flex: 1;
   max-width:100%;
-  
+  overflow-y:auto;
+  overflow-x:hidden;
+  transform:scaleY(-1);
 }
 bentry {
   display:flex;
@@ -265,6 +273,7 @@ bentry {
   overflow: hidden;
   background-color: black;
   box-shadow: 3px 5px 5px 0 black;
+  transform:scaleY(-1);
 }
 bentry + bentry{
   margin-top: 12px;
@@ -280,8 +289,8 @@ bheader:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
-  background-color: rgb(70, 70, 80);
+  height: 2px;
+  background-color: #7e4552;
   bottom: -1px;
   left: 0;
 }
@@ -308,7 +317,7 @@ btime{
 }
 bbody {
   display:flex;
-  margin: 6px 20px 10px 20px;
+  margin: 6px 12px 10px 12px;
   padding: 2px 6px;
   font-size: 14px;
   flex-direction:column;
@@ -321,16 +330,15 @@ bp + bp{
   margin-top:6px;
 }
 
-
 @media only screen and (max-width: 620px) {
   .main {
     width: 100%;
   }
-  btitle {
-    text-indent: 30px;
-  }
   bheader {
     height: 30px;
+  }
+  bentry:last-child btitle {
+    text-indent: 30px;
   }
   btime{
     display:none;
