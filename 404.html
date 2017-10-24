@@ -8,14 +8,19 @@
 <style>
 body{
    margin:0;
-  font-family:"Ubuntu", monospace;
-}
-div{
-  display:flex;
+  font-family:"Roboto Mono", monospace;
+  background-color:#222;
+  color:#ccc;
 }
 a{
   text-decoration:underline;
   color:rgb(0,148,148);
+}
+p{
+  text-shadow:0 2px 1px #000;
+}
+b{
+  text-shadow:none;
 }
 #page{
   position:absolute;
@@ -28,11 +33,24 @@ a{
   align-items:center;
   justify-content:center;
 }
+button{
+  outline:0;
+  border:0;
+  background-color:rgb(70,70,80);
+  color:#ccc;
+  padding:4px 7px;
+  transition:padding .3s ease;
+  font-family:"Roboto Mono", monospace;
+}
+button:active{
+  background-color:rgb(60,60,70);
+  color:#bbb;
+}
 </style>
 </head>
-<div id="page">
-  <div>Error 404</div>
-  <div>Ya Messed Up B</div>
+   <body>
+  <div id="page">
+    <p>Error 404, ya messed up <b>🅱</b></p>
   <button onclick="returnPage()">
     <span>Return to Previous Page</span>
     </button
@@ -42,3 +60,5 @@ function returnPage() {
     window.history.back();
 }
 </script>
+     </body>
+     </html>
