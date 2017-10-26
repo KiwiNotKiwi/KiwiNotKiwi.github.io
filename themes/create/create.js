@@ -1,5 +1,5 @@
 var thememeta =
-  "//META{'name':'straWberry','description':'straWberry?','author':'KiwiNotKiwi','version':'1.1.1'}*//" +
+  "//META{'name':'straWberry','description':'straWberry?','author':'KiwiorKixi','version':'1.1.1'}*//" +
   "\n" +
   "\n";
 
