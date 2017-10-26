@@ -1,17 +1,12 @@
 var createmenu = "<div class='menu'> <div class='scroller'>  </nsection> <nheader>Functionality</nheader> <nsection>  <label class='themebutton'> <input type='button' id='addto'><span>Horizontal Servers</span><span class='run'>@import url('https://rawgit.com/KiwiNotKiwi/Themes/master/Addons/strawberry/horizontalservers.css');</span></label> <label class='themebutton'> <input type='button' id='addto'><span>Square Icons</span><span class='run'>@import url('https://rawgit.com/KiwiNotKiwi/Themes/master/Addons/strawberry/squareicons.css');</span></label> <div class='optiondivider'> <label class='themebutton'> <input type='button' id='addto'><span>Centered Typing</span><span class='run'>@import url('https://rawgit.com/KiwiNotKiwi/Themes/master/Addons/strawberry/centertyping.css');</span></label> <label class='themebutton'> <input type='button' id='addto'><span>Bottom Typing</span><span class='run'>@import url('https://rawgit.com/KiwiNotKiwi/Themes/master/Addons/strawberry/bottomtyping.css');</span></label> </div> </nsection>  </div> </div> <div class='themecreator'> <a download='strawberry.theme.css' id='downloadlink' style='display: none;transform:translate3d(0, 30px, 0) scale(0);'><span>Download</span></a> <button id='generate'>Generate Theme</button> <textarea id='customcss' placeholder='Type custom CSS here'></textarea> </div>";
 
 var thememeta =
-  "//META{'name':'straWberry','description':'straWberry?','author':'KiwiOrKixi','version':'1.1.1'}*//" +
-  "\n" +
-  "\n";
+  "//META{'name':'straWberry','description':'straWberry?','author':'KiwiOrKixi','version':'1.1.1'}*//" + "\n" + "\n";
 
 var themeimport =
-  "@import url('https://rawgit.com/KiwiNotKiwi/files/master/themefiles/strawberry/strawberry.css');" +
-  "\n" +
-  "\n";
+  "@import url('https://rawgit.com/KiwiNotKiwi/files/master/themefiles/strawberry/strawberry.css');" + "\n" + "\n";
 
-var defaultoptions = "/*Color Options*/" + "\n" +
-    ":root {" + "\n" +
+var defaultoptions = "/*Color Options*/" + "\n" + ":root {" + "\n" +
     "--first-color: #222222;" + "\n" +
     "--second-color: #222222;" + "\n" +
     "--third-color: #222222;" + "\n" +
