@@ -10,8 +10,10 @@ var themeimport =
 
 var defaultoptions = "/*Color Options*/" + "\n" +
     ":root {" + "\n" +
-    "yes" + "\n" +
-    "no" + "\n" +
+    "--first-color: #222222;" + "\n" +
+    "--second-color: #222222;" + "\n" +
+    "--third-color: #222222;" + "\n" +
+    "--accent-color: #222222;" + "\n" +
      "}" + "\n";
 
 (function() {
@@ -56,5 +58,5 @@ $( "#generate" ).click(function() {
   $(".themebutton .run").click(function(){
     var txt = $.trim($(this).text());
     var box = $("#customcss");
-    box.val(box.val() + "\n" + txt + "\n");
+    box.val( txt + "\n" + "\n" + box.val() + "\n");
   });
