@@ -1,12 +1,5 @@
-var defaultoptions = "/*Start Colors*/" + "\n" +
-    ":root {" + "\n" +
-    "yes" + "\n" +
-    "no" + "\n" +
-     "}" + "\n" +
-     "/*End Colors*/";
-
-     var thememeta =
-  "//META{'name':'straWberry','description':'straWberry?','author':'KiwiNotKiwi','version':'k.y.s'}*//" +
+var thememeta =
+  "//META{'name':'straWberry','description':'straWberry?','author':'KiwiNotKiwi','version':'1.1.1'}*//" +
   "\n" +
   "\n";
 
@@ -14,6 +7,12 @@ var themeimport =
   "@import url('https://rawgit.com/KiwiNotKiwi/files/master/themefiles/strawberry/strawberry.css');" +
   "\n" +
   "\n";
+
+var defaultoptions = "/*Color Options*/" + "\n" +
+    ":root {" + "\n" +
+    "yes" + "\n" +
+    "no" + "\n" +
+     "}" + "\n";
 
 (function() {
   var textFile = null,
@@ -43,3 +42,19 @@ var themeimport =
     false
   );
 })();
+
+$(function() {
+  $('#customcss').append( defaultoptions );
+});
+
+$( "#generate" ).click(function() {
+  $(this).text(function () {
+    return $(this).text().replace("Generate Theme", "Update Theme"); 
+});
+});
+
+  $(".themebutton .run").click(function(){
+    var txt = $.trim($(this).text());
+    var box = $("#customcss");
+    box.val(box.val() + "\n" + txt + "\n");
+  });
