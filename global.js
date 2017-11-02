@@ -4,7 +4,7 @@ var menubutton = "<div class='menubtn'><div><span></span><span></span><span></sp
 var backgroundtoggle = "<div class='bgtoggle left' ttip='pls no moar'><span></span></div>";
 var tooltipe = "<div class='tooltip'></div>";
 
-var sitenav = "<header>Internal</header> <a href='http://meme.cx/themes/'>Themes</a> <!--<header>External</header> <a href='#'>lol</a> <header>Contact</header> <a href='#'>lol</a>-->";
+var sitenav = "<a href='http://meme.cx/'>Home</a><header>Internal</header> <a href='http://meme.cx/themes/'>Themes</a> <!--<header>External</header> <a href='#'>lol</a> <header>Contact</header> <a href='#'>lol</a>-->";
 
 function menubtn() {
   $(".menubtn").click(function() {
