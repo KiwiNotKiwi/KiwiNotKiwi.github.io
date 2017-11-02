@@ -1,37 +1,43 @@
-main section{
-  margin:8px;
-  display:flex;
-  flex-direction:column;
-  box-shadow:3px 5px 5px 0 black;
+main section {
+  margin: 0 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 5px 5px 0 black;
 }
-main section header{
-  background-color:#000;
-  color:#ccc;
-  font-weight:600;
-  display:flex;
-  align-items:center;
-  margin-bottom:2px;
-  padding:4px;
+main section header {
+  background-color: #000;
+  color: #ccc;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  padding: 4px;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  
 }
-main section header span{
-  font-size:11px;
-  color:#bbb;
-  margin-left:10px;
-  background-color:rgb(70,70,80);
-  padding:1px 3px;
-  border-radius:3px;
+main section header span {
+  font-size: 11px;
+  color: #bbb;
+  margin-left: 10px;
+  background-color: rgb(70, 70, 80);
+  padding: 1px 3px;
+  border-radius: 3px;
 }
-main section article{
-  color:#ccc;
-  padding:4px;
-  background-color:#000;
+main section article {
+  color: #ccc;
+  padding: 4px;
+  background-color: #000;
 }
 
 @media only screen and (max-width: 620px) {
-  main section header{
-    padding-left:50px;
+  main section header {
+    padding-left: 50px;
   }
-  main section article:last-child{
-    text-indent:50px;
+  main section header b{
+    display:none;
+  }
+  main section article:last-child {
+    text-indent: 50px;
   }
 }
