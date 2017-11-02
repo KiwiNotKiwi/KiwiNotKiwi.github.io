@@ -1,0 +1,67 @@
+main .scroller{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-evenly;
+  justify-content:center;
+}
+main section{
+  position:relative;
+  margin: 0 8px 16px;
+  display:flex;
+  min-width:270px;
+  max-width:270px;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  background-color:#222;;
+  padding:6px 10px;
+  box-shadow: 3px 5px 5px 0 black;
+  overflow:hidden;
+  transition:margin .25s ease;
+}
+main section:hover{
+  margin:0 8px 10px;
+}
+main section header{
+  position:absolute;
+  top:-22px;
+  padding:2px 5px;
+  background-color:#000;
+  color:#fff;
+  text-align:center;
+  height:22px;
+  border-radius:0 0 3px 3px;
+  transition:top .25s ease;
+  z-index:1;
+}
+main section:hover header{
+  top:0;
+}
+main section article{
+  flex:1;
+  user-select:none;
+  transition:transform .25s ease,margin-bottom .25s ease;
+}
+main section:hover article{
+  transform:scale(1.05);
+  margin-bottom:6px;
+}
+main section footer{
+  width:100%;
+}
+main section footer > span{
+  display:flex;
+}
+main section footer > span:first-child{
+  font-size:20px;
+  font-weight:600;
+  color:Teal;
+}
+main section footer > span:nth-child(2){
+  text-indent:10px;
+  color:#fff;
+}
+main section footer > span:last-child{
+  color:#bbb;
+  user-select:none;
+}
