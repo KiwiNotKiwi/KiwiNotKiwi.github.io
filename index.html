@@ -11,13 +11,14 @@
   <body>
   <div id="page"></div>
 <div id="modal"></div>
-<div id="tippytop"></div>
+<div id="tippytop"><div class="tooltip"></div></div>
 <script>
   $(function() {
-  $( "#page" ).prepend( menu + main );
-  $( "#tippytop" ).append( menubtn + appearance );
-  $( ".sexy" ).prepend( blogentry );
-  return menubutton() + appearancetoggle();
+  $( "#page" ).prepend( nav + main );
+  $( "nav .scroller" ).append( sitenav );
+  $( "main .scroller" ).append( blog )
+  $( "#tippytop" ).append( tooltipe + menubutton + backgroundtoggle );
+  return menubtn() + bgtoggle() + tooltipero();
 });
 </script>
   <script src="global.js"></script>
