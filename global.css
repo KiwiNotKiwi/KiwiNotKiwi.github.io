@@ -24,6 +24,13 @@ body.active{
   bottom:0;
   left:0;
   right:0;
+  margin:12px 0 12px 12px;
+}
+*::-webkit-scrollbar{
+  width:8px;
+}
+*::-webkit-scrollbar-thumb{
+  background-color:rgb(35,35,35);
 }
 nav{
   display:flex;
@@ -90,6 +97,8 @@ nav a:hover:after{
 }
 main{
   flex:1;
+  overflow-y:auto;
+  overflow-x:hidden;
 }
 
 .menubtn{
