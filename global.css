@@ -9,12 +9,12 @@ body{
   bottom:0;
   left:0;
   right:0;
-  background-color:grey;
+  background:#7e4552;
   overflow:hidden;
-  transition:background-color .3s ease;
+  transition:background .3s ease;
 }
 body.active{
-  background-color:#7e4552;
+  background:#7e4552 url("https://cdn.rawgit.com/KiwiNotKiwi/files/master/img/flicker.gif");
 }
 #page{
   position:absolute;
@@ -77,11 +77,16 @@ nav a:after{
   height:9px;
   left:6px;
 }
+nav a:hover:before,
+nav a:hover:after{
+  bottom:0;
+}
 nav a:hover:before{
-  transform:rotate(45deg) translateX(-0px) translateY(-4px);
+  transform:rotate(45deg) translateX(0px) translateY(-5px);
 }
 nav a:hover:after{
   transform:rotate(45deg) translateY(0px) translateX(4px);
+  height:8px;
 }
 main{
   flex:1;
