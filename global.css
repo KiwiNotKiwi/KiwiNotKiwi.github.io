@@ -150,16 +150,26 @@ main{
   bottom:10px;
   width:60px;
   height:28px;
-  background-color:rgb(80,80,90);
   cursor:pointer;
-  transition:background-color .3s ease;
-  box-shadow:2px 3px 5px 0 black;
+  margin:0 3px 3px 0;
+  background-color: #bbb;
+  border: 0 solid black;
+  will-change: transform, box-shadow,margin,background-color;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 0 0 #16161d;
+  transition: 150ms transform ease-out,150ms box-shadow ease-out,150ms margin ease-out;
+}
+.bgtoggle:hover{
+  box-shadow: 5px 5px 0 0 #16161d;
+  margin:0 6px 6px 0;
+}
+.bgtoggle:active{
+  transform: translate(3px,3px);
+  box-shadow: 0 0 0 0 #16161d;
+  margin:0 3px 3px 0;
 }
 .bgtoggle.active{
-  background-color:rgb(100,70,80);
-}
-.bgtoggle input{
-  display:none;
+  background-color:#000;
 }
 .bgtoggle span{
   position:absolute;
@@ -167,6 +177,7 @@ main{
   bottom:0;
   left:0;
   right:0;
+  pointer-events:none;
 }
 .bgtoggle span:before{
   content:"";
@@ -177,22 +188,26 @@ main{
   transform:translateX(4px);
   width:26px;
   height:20px;
-  background-color:rgb(50,50,60);
+  background-color:#000;
   transition:transform .3s ease, background-color .3s ease;
+  pointer-events:none;
 }
-.bgtoggle input:checked ~ span:before{
-  background-color:#d2738a;
-  transform:translateX(30px);
+.bgtoggle.active span:before{
+  background-color:#bbb;
+  transform:translateX(28px);
 }
 
 .tooltip{
   display:none;
-  background-color:rgb(70,70,80);
+  background-color:#000;
   pointer-events:none;
   position:absolute;
   padding:4px 6px;
-  border-radius:4px;
-  color:#ccc;
+  border-radius:0;
+  line-height:12px;
+  color:#bbb;
+  font-weight:600;
+  letter-spacing:.5px;
   font-size:14px;
   user-select:none;
 }
@@ -206,7 +221,7 @@ main{
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(70, 70, 80, 0);
-	border-left-color: rgb(70,70,80);
+	border-left-color: #000;
 	border-width: 8px;
 	margin-top: -8px;
 }
@@ -224,3 +239,5 @@ main{
     display:block;
   }
 }
+/*https://rawgit.com/KiwiNotKiwi/KiwiNotKiwi.github.io/master/global.css*/
+/*https://rawgit.com/KiwiNotKiwi/KiwiNotKiwi.github.io/master/global.js*/
