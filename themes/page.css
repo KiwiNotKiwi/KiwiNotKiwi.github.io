@@ -35,8 +35,10 @@ main section header {
   text-align: center;
   height: 22px;
   border-radius: 0 0 3px 3px;
-  transition: top 0.25s ease;
+  will-change:top;
+  transition:150ms top ease-out;
   z-index: 1;
+  white-space:nowrap;
 }
 main section article {
   flex: 1;
