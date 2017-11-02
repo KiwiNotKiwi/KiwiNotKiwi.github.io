@@ -1,7 +1,7 @@
 var nav = "<nav> <div class='scroller'>  </div> </nav>";
 var main = "<main> <div class='scroller'> </div> </main>";
 var menubutton = "<div class='menubtn'><div><span></span><span></span><span></span></div></div>";
-var backgroundtoggle = "<div class='bgtoggle tip left' ttip='pls no moar'><span></span></div>";
+var backgroundtoggle = "<div class='bgtoggle left' ttip='pls no moar'><span></span></div>";
 var tooltipe = "<div class='tooltip'></div>";
 
 var sitenav = "<header>Internal</header> <a href='http://meme.cx/themes/'>Themes</a> <!--<header>External</header> <a href='#'>lol</a> <header>Contact</header> <a href='#'>lol</a>-->";
