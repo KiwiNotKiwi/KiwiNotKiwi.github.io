@@ -39,7 +39,8 @@ nav{
   margin-right:8px;
   flex-basis:160px;
   user-select:none;
-  box-shadow:3px 5px 5px 0 black;
+  box-shadow: 4px 4px 0 0 rgba(180,180,180,.5);
+  will-change:left;
 }
 nav.active{
   left:-4px;
@@ -59,6 +60,7 @@ nav a{
   font-size:14px;
   padding:4px 4px 4px 14px;
   position:relative;
+  will-change:background-color,color;
 }
 nav a:hover{
   background-color:rgb(35,35,35);
@@ -73,7 +75,8 @@ nav a:after{
   bottom:1px;
   left:2px;
   margin:auto 0;
-  transition:transform .3s ease;
+  will-change:bottom,transform;
+  transition:150ms transform ease-out;
 }
 nav a:before{
   width:9px;
@@ -143,7 +146,46 @@ main{
 .menubtn div span:last-child{
   bottom:1px;
 }
-
+.bgtoggle:before{
+  content:"end my life";
+  position:absolute;
+  left:-100px;
+  top:2px;
+  background-color:#bbb;
+  padding:2px 4px;
+  opacity:0;
+  white-space:nowrap;
+  will-change:background-color,color,opacity;
+  transition:150ms opacity ease-out,150ms background-color ease-out,150ms color ease-out;
+}
+.bgtoggle:hover:before,
+.bgtoggle:hover:after{
+  opacity:1;
+}
+.bgtoggle.active:before{
+  background-color:#000;
+  color:#bbb;
+}
+.bgtoggle:after{
+  right:56px;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-left-color: #bbb;
+	border-width: 8px;
+  opacity:0;
+	margin-top: -8px;
+  will-change:border-left-color,opacity;
+  transition:150ms border-left-color ease-out,150ms opacity ease-out;
+}
+.bgtoggle.active:after{
+  border-left-color:#000;
+}
 .bgtoggle{
   position:absolute;
   right:10px;
