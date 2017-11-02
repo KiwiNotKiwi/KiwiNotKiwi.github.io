@@ -4,6 +4,8 @@ var menubutton = "<div class='menubtn'><div><span></span><span></span><span></sp
 var backgroundtoggle = "<label class='bgtoggle tip left' ttip='pls no moar'> <input type='checkbox'><span></span></label>";
 var tooltipe = "<div class='tooltip'></div>";
 
+var sitenav = "<header>Internal</header> <a href='#'>lol</a> <header>External</header> <a href='#'>lol</a> <header>Contact</header> <a href='#'>lol</a>";
+
 function menubtn() {
   $(".menubtn").click(function() {
     $("nav").toggleClass("active");
