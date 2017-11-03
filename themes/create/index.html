@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Create a dick</title>
+    <title>Themes List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link href="http://meme.cx/global.css" rel="stylesheet">
-    <link href="create.css" rel="stylesheet">
+    <link href="page.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
   </head>
   <body>
   <div id="page"></div>
 <div id="modal"></div>
-<div id="tippytop"></div>
+<div id="tippytop"><div class="tooltip"></div></div>
 <script>
   $(function() {
-    $("#page").prepend(main);
-    $("#tippytop").append(menubtn + appearance);
-    return menubutton() + appearancetoggle();
+    $("#page").prepend(nav + main);
+    $("nav .scroller").append(sitenav + iframezoom);
+    $("main .scroller").append(livepreview);
+    $("#tippytop").append(menubutton + backgroundtoggle);
+    return menubtn() + bgtoggle() + tooltipero();
   });
 </script>
   <script src="http://meme.cx/global.js"></script>
-    <script src="create.js"></script>
+    <script src="page.js"></script>
   </body>
 </html>
