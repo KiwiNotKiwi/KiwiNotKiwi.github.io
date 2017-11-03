@@ -51,10 +51,20 @@ main section footer {
 main section footer > span {
   display: flex;
 }
+main section a{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+main section a:hover{
+  color:rgb(0,148,148);
+}
 main section footer > span:first-child {
   font-size: 20px;
   font-weight: 600;
-  color: Teal;
+  color: rgb(0,128,128);
 }
 main section footer > span:nth-child(2) {
   color: #fff;
