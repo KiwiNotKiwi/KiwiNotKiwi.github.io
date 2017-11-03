@@ -16,6 +16,10 @@ body{
 body.active{
   background:#7e4552;
 }
+a{
+  text-decoration:none;
+  color:inherit;
+}
 #page{
   position:absolute;
   display:flex;
