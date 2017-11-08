@@ -1,3 +1,18 @@
+main{
+  position:relative;
+}
+.backghover{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-size:90%;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  opacity:0;
+  transition:250ms opacity ease-out;
+}
 main .scroller {
   display: flex;
   flex-flow: row wrap;
@@ -44,6 +59,15 @@ main section article {
   flex: 1;
   user-select: none;
   transition: transform 0.25s ease, margin-bottom 0.25s ease;
+}
+main section article:after{
+  content:attr(data-content);
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  
 }
 main section footer {
   width: 100%;
