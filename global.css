@@ -107,6 +107,9 @@ main{
   overflow-y:auto;
   overflow-x:hidden;
 }
+main .scroller{
+  display: flex;
+}
 
 .menubtn{
   display:none;
