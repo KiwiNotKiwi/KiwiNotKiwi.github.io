@@ -1,0 +1,43 @@
+main .scroller{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.pheader{
+  display:flex;
+  flex-direction:column;
+  width:95%;
+  margin-bottom:20px;
+  box-sizing:border-box;
+  text-align:center;
+}
+.pheader section{
+  display:flex;
+  flex-direction:column;
+}
+.pheader header{
+  font-size: 26px;
+  font-weight: 600;
+  color: rgb(0,128,128);
+}
+.pheader section span:first-child{
+  font-size:18px;
+  color:#fff;
+}
+.pheader section span:last-child{
+  font-size:17px;
+  color:#bbb;
+}
+
+.framewrap{
+  position:relative;
+  width:95%;
+  padding-top:56%;
+}
+.liveview{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
