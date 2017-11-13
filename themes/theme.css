@@ -6,27 +6,57 @@ main .scroller{
 .pheader{
   display:flex;
   flex-direction:column;
-  width:95%;
-  margin-bottom:20px;
+  margin-bottom:14px;
   box-sizing:border-box;
-  text-align:center;
+  align-items:center;
 }
-.pheader section{
-  display:flex;
-  flex-direction:column;
+.pheader span{
+  text-shadow:0px 2px 0 rgba(0,0,0,.7);
 }
 .pheader header{
   font-size: 26px;
   font-weight: 600;
   color: rgb(0,128,128);
+  letter-spacing:4px;
+  text-shadow:0px 3px 0 rgba(0,0,0,.5);
 }
-.pheader section span:first-child{
+.pheader span:nth-child(2){
+  font-size:18px;
+  color:#bbb;
+  margin-bottom:6px;
+  position:relative;
+}
+.pheader span:nth-child(2):after,
+.pheader span:nth-child(4):after{
+  content:"";
+  position:absolute;
+  height:2px;
+  top:24px;
+  left:10%;
+  right:10%;
+  background-color:rgba(180,180,180,.7);
+}
+.pheader span:nth-child(3){
   font-size:18px;
   color:#fff;
 }
-.pheader section span:last-child{
+.pheader span:nth-child(4){
   font-size:17px;
   color:#bbb;
+  position:relative;
+}
+.pheader a{
+  color:#222;
+  border-radius:3px;
+  background-color:rgba(35,128,128,.5);
+  padding:1px 6px;
+  margin-top:12px;
+  text-align:center;
+  transition:150ms ease-out;
+}
+.pheader a:hover{
+  color:#000;
+  background-color:rgba(35,128,128,1);
 }
 
 .framewrap{
