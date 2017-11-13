@@ -1,4 +1,4 @@
-var themelist = "<section><header>Up to Date V2</header><article><img src='https://rawgit.com/KiwiNotKiwi/files/master/themefiles/website/strawberry1.png' width='330' height='auto' /></article><footer><span>straWberry</span><span>super strawberry lanA</span><span>#fruit #cool #yay</span></footer><a href='https://raw.githubusercontent.com/KiwiNotKiwi/Themes/master/straWberry.theme.css' download></a></section>";
+var themelist = "<section><header>Up to Date V2</header><article><img src='https://rawgit.com/KiwiNotKiwi/files/master/themefiles/website/strawberry1.png' width='330' height='auto' /></article><footer><span>straWberry</span><span>super strawberry lanA</span><span>#fruit #cool #yay</span></footer><a href='./strawberry.html'></a></section>";
 
 var bghoverer = "<div class='backghover'></div>";
 
