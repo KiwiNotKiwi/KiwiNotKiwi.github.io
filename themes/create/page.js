@@ -28,7 +28,7 @@ var editnav = '<div class="editnav"><div class="button"></div><div class="inner"
 
 var texteditor = '<a download="strawberry.theme.css" id="downloadlink" style="display: none;transform:translate3d(0, 30px, 0) scale(0);"><span>Download</span></a> <button id="generate">Generate Theme</button> <textarea id="customcss" placeholder="Type custom CSS here"></textarea>';
 
-var livepreview = '<div class="framewrap"><iframe id="livepreview" class="liveview" src="https://betterdocs.net/themes/assets/darkdiscord.html?theme=https://raw.githubusercontent.com/0mniscient/Discord-Themes/master/Themes/Quiet.theme.css" width="100%" height="100%" allowfullscreen="" frameborder="0"></iframe></div>';
+var livepreview = '<div class="framewrap"><iframe id="livepreview" class="liveview" src="https://meme.cx/themes/discorddemo/discord.html?theme=https://raw.githubusercontent.com/KiwiNotKiwi/Themes/master/straWberry.theme.css" width="100%" height="100%" allowfullscreen="" frameborder="0"></iframe></div>';
 
 var iframezoom = '<div class="zoomwrap"><span class="x">0</span><div class="slider"><div id="scale"></div></div>';
 
