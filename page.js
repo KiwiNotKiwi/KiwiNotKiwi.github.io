@@ -4,7 +4,7 @@ var entry = [
 	date: `11/15/2017`,
 	time: `11:11 am`,
 	body: `all i got all i got all i got all i got i dont know what you wanted to show`,
-	tags: `announcement`
+	tags: `update`
 },
 {
 	title: `well rip i died`,
@@ -12,6 +12,13 @@ var entry = [
 	time: `11:34 am`,
 	body: `dun did the suicidel thingers`,
 	tags: `update`
+},
+{
+	title: `yay`,
+	date: `12/6/2017`,
+	time: `12:59 pm`,
+	body: `this bitchnips of a site works now`,
+	tags: `announcement`
 }
 ]
 
