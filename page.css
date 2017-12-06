@@ -1,43 +1,149 @@
-main section {
-  margin: 0 8px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 3px 5px 5px 0 black;
+main{
+	position:relative;
 }
-main section header {
-  background-color: #000;
-  color: #ccc;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  margin-bottom: 2px;
-  padding: 4px;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  
+main #filter{
+	position:absolute;
+	top:calc(100% - 42px);
+	left:6px;
+	width:36px;
+	height:36px;
+	border-radius:50%;
+	user-select:none;
+	cursor:pointer;
+	transition:200ms ease;
+	pointer-events:none;
 }
-main section header span {
-  font-size: 11px;
-  color: #bbb;
-  margin-left: 10px;
-  background-color: rgb(70, 70, 80);
-  padding: 1px 3px;
-  border-radius: 3px;
+main #filter .chngbtn{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:#282A2E url("req/ref/filter.svg") no-repeat center / 80%;
+	border-radius:50%;
+	transition:150ms ease;
+	pointer-events:auto;
 }
-main section article {
-  color: #ccc;
-  padding: 4px;
-  background-color: #000;
+main #filter .chngbtn.active{
+	border-radius:50% 0 0 50%;
 }
-
-@media only screen and (max-width: 620px) {
-  main section header {
-    padding-left: 50px;
-  }
-  main section header b{
-    display:none;
-  }
-  main section article:last-child {
-    text-indent: 50px;
-  }
+main #filter .inner{
+	position:absolute;
+	left:38px;
+	display:flex;
+	padding:0 5px;
+	opacity:0;
+	align-items:center;
+	overflow:hidden;
+	width:0;
+	height:36px;
+	background:#282A2E;
+	transition:200ms ease;
+}	
+main #filter .chngbtn.active ~ .inner{
+	opacity:1;
+	width:264px;
+}
+main #filter .inner span{
+	display:flex;
+	padding:3px 6px;
+	margin:0 2px;
+	cursor:pointer;
+	color:#fff;
+	font-size:1rem;
+	background:rgba(80,82,86,.4);
+	transition:150ms ease-out;
+	pointer-events:auto;
+	overflow:hidden;
+}
+main #filter .inner span:active{
+	background:rgba(80,82,86,1);
+}
+main #filter .inner span:first-child{
+	border-top:2px solid #ccc;
+}
+main .blog *{
+	display:flex;
+}
+main .blog{
+	flex-direction:column;
+	padding:12px 12px 0 8px;
+}
+main .blog section{
+	flex-direction:column;
+	margin:5px 0;
+	color:#fff;
+	overflow:hidden;
+}
+.announcement,
+#announcement{
+	border-top:2px solid #ff5857;
+}
+.update,
+#update{
+	border-top:2px solid #3CB371;
+}
+main .blog section>*{
+	padding:3px;
+}
+main .blog header{
+	margin-bottom:2px;
+}
+main .blog header *{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	font-size:.95em;
+}
+main .blog header > span{
+	max-width:78%;
+}
+main .blog header time{
+	margin-left:6px;
+	font-size:.75em;
+	line-height:1.75em;
+}
+main .blog header time span{
+	margin-left:2px;
+}
+main .blog article{
+	font-size:.85em;
+}
+main .blog sub{
+	user-select:none;
+	font-family:monospace;
+}
+main .blog section:nth-child(odd) header,
+main .blog section:nth-child(odd) article,
+main .blog section:nth-child(odd) sub{
+	background-color:#26292c;
+}
+main .blog section:nth-child(even) header,
+main .blog section:nth-child(even) article,
+main .blog section:nth-child(even) sub{
+	background-color:#292c2f;
+}
+@media only screen and (max-width: 620px){
+	main #filter{
+		top:6px;
+		left:calc(100% - 52px);
+		width:46px;
+		height:46px;
+	}
+	main #filter .chngbtn.active{
+		border-radius:0 50% 50% 0;
+	}
+	main #filter .inner{
+		left:initial;
+		right:48px;
+		direction:rtl;
+		height:46px;
+	}
+	main .blog{
+		padding:56px 12px 0 8px;
+	}
+	main .blog header time span{
+		display:none;
+	}
+	
 }
