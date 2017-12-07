@@ -30,29 +30,79 @@ body{
 }
 nav{
 	flex:0 0 140px;
-	background:#26292c;
-	overflow:hidden;
+	overflow:auto;
 	transition:250ms ease;
 	z-index:1;
+	margin:10px 4px 0 8px;
+	height:calc(100% - 24px);
+	max-height:calc(100% - 24px);
+	direction:rtl;
+	user-select:none;
 }
 nav .wrapper{
 	display:flex;
 	flex-direction:column;
+	direction:ltr;
 }
 nav .sec{
-	padding:4px;
+	margin:3px 0;
 }
-nav .sec:nth-child(odd){
-	/*background:#26292c;*/
+nav .sec:first-child{
+	margin:0 0 3px 0;
 }
-nav .sec:nth-child(even	){
-	background:#292c2f;
-	box-shadow:0 0 4px 0 rgba(0,0,0,.4);
+nav .sec:last-child{
+	margin:3px 0 0 0;
+}
+nav .sec:nth-child(odd)>*,
+nav .sec:nth-child(odd) .upper:after{
+	background-color:#26292c;
+}
+nav .sec:nth-child(even)>*,
+nav .sec:nth-child(even) .upper:after{
+	background-color:#292c2f;
+}
+#page.active nav .sec .upper{
+	background-image:url("https://cdn.rawgit.com/KiwiNotKiwi/files/master/img/flicker.gif");
+	background-size:3px;
+}
+#page.active nav .sec .upper:before{
+	background-image:url("https://cdn.rawgit.com/KiwiNotKiwi/files/master/img/flicker.gif");
+	background-size:6px;
 }
 nav .sec .upper{
-	font-weight:500;
-	font-size:1.1rem;
-	padding:4px 4px 2px 4px;
+	background-image:url("https://4kwallpapers.co/wp-content/uploads/2015/09/abstract-colorful-vectors-design-4k-wallpapers.png");
+	background-repeat:repeat;
+	background-size:cover;
+	background-position:50% 50%;
+	font-weight:bold;
+	position:relative;
+	text-align:center;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+nav .sec .upper:before{
+	content:"";
+	position:absolute;
+	z-index:-2;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	box-sizing:border-box;
+	background-image:inherit;
+	background-repeat:repeat;
+	background-size:cover;
+	background-position:50% 50%;
+}
+nav .sec .upper:after{
+	content:"";
+	position:absolute;
+	z-index:-1;
+	top:.125em;
+	bottom:.125em;
+	left:.125em;
+	right:.125em;
+	box-sizing:border-box;
 }
 nav .sec .lower{
 	display:flex;
@@ -61,7 +111,7 @@ nav .sec .lower{
 nav .sec .lower span{
 	display:table;
 	padding:0 4px 4px 4px;
-	margin-left:14px;
+	margin-left:2px;
 	position:relative;
 	font-weight:100;
 }
@@ -147,6 +197,7 @@ main .wrapper>*{
 	width:46px;
 	height:46px;
 	border-radius:50%;
+	cursor:pointer;
 	transition:250ms ease;
 }
 #sitenav.active{
@@ -173,12 +224,16 @@ main .wrapper>*{
 	}
 	nav{
 		position:absolute;
-		top:52px;
-		background:#282A2E;
+		top:42px;
+		background:#7e4552;
 		left:-100%;
+		max-height:calc(100% - 64px);
+	}
+	#page.active nav{
+		background:transparent;
 	}
 	nav.active{
-		left:6px;
+		left:-2px;
 	}
 	nav .wrapper{
 		
