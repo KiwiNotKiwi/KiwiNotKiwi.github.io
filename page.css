@@ -67,7 +67,7 @@ main .blog *{
 }
 main .blog{
 	flex-direction:column;
-	padding:12px 12px 0 8px;
+	padding:7px 12px 0 8px;
 }
 main .blog section{
 	flex-direction:column;
@@ -75,11 +75,11 @@ main .blog section{
 	color:#fff;
 	overflow:hidden;
 }
-.announcement,
+.announcement>header,
 #announcement{
 	border-top:2px solid #ff5857;
 }
-.update,
+.update>header,
 #update{
 	border-top:2px solid #3CB371;
 }
