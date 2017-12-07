@@ -32,6 +32,64 @@ var personal = [
 {
 	navname: `Snapchat`,
 	navaddress: `#`
+},
+
+
+
+{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
+},{
+	navname: `Youtube`,
+	navaddress: `#`
 }
 ]
 
