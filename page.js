@@ -1,9 +1,9 @@
 var entry = [
 {
-	title: `owo kms owo kms owo kms owo kms owo kms owo kms `,
-	date: `11/15/2017`,
-	time: `11:11 am`,
-	body: `all i got all i got all i got all i got i dont know what you wanted to show`,
+	title: `yay`,
+	date: `12/6/2017`,
+	time: `12:59 pm`,
+	body: `this bitchnips of a site works now`,
 	tags: `update`
 },
 {
@@ -14,10 +14,10 @@ var entry = [
 	tags: `update`
 },
 {
-	title: `yay`,
-	date: `12/6/2017`,
-	time: `12:59 pm`,
-	body: `this bitchnips of a site works now`,
+	title: `owo kms owo kms owo kms owo kms owo kms owo kms `,
+	date: `11/15/2017`,
+	time: `11:11 am`,
+	body: `all i got all i got all i got all i got i dont know what you wanted to show`,
 	tags: `announcement`
 }
 ]
